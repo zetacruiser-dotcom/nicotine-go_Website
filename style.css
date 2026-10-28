@@ -1,0 +1,60 @@
+/* Nicotine Go website: same charcoal and sage palette as the app */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&display=swap");
+
+:root {
+  --bg: #111413;
+  --surface: #181c1a;
+  --border: rgba(255, 255, 255, 0.08);
+  --text: #eef1ee;
+  --muted: #98a19b;
+  --accent: #9dbea4;
+  --danger: #d98c7c;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-weight: 500;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+main { max-width: 720px; margin: 0 auto; padding: 48px 20px 80px; }
+
+header.site { display: flex; align-items: center; gap: 12px; margin-bottom: 40px; }
+header.site a { color: var(--text); text-decoration: none; font-weight: 800; font-size: 18px; }
+
+.mark {
+  width: 36px; height: 36px; border-radius: 50%;
+  border: 3px solid var(--accent);
+  display: grid; place-items: center;
+  font-weight: 800; font-size: 12px; color: var(--text);
+}
+
+h1 { font-size: 30px; line-height: 1.2; margin: 0 0 8px; font-weight: 800; }
+h2 { font-size: 19px; margin: 36px 0 8px; font-weight: 700; }
+p, li { color: var(--text); }
+.muted { color: var(--muted); }
+a { color: var(--accent); }
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 20px 22px;
+  margin: 16px 0;
+}
+
+table { width: 100%; border-collapse: collapse; font-size: 15px; }
+th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--border); vertical-align: top; }
+th { color: var(--muted); font-weight: 700; font-size: 13px; }
+
+ol li, ul li { margin: 6px 0; }
+.danger { color: var(--danger); }
+
+footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--border); font-size: 14px; color: var(--muted); }
+footer a { margin-right: 16px; }
